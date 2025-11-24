@@ -26,7 +26,7 @@ body {
 header {
     background-color: #1e1e1e;
     padding: 20px 0;
-    border-bottom: 2px solid #00ff88; /* Linha verde neon */
+    border-bottom: 2px solid #00ff88; 
     position: relative;
     z-index: 10;
 }
@@ -122,7 +122,6 @@ p { margin-bottom: 15px; color: #b0b0b0; }
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
-/* Botão Neon */
 .btn-neon {
     display: inline-block; padding: 12px 35px; background-color: transparent;
     border: 2px solid #00ff88; color: #00ff88; text-decoration: none;
@@ -136,21 +135,21 @@ p { margin-bottom: 15px; color: #b0b0b0; }
 }
 
 /* =========================================
-   6. NOVO LAYOUT: PÁGINA SOBRE MIM (ATUALIZADO)
+   6. NOVO LAYOUT: PÁGINA SOBRE MIM 
    ========================================= */
 .secao-sobre {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem; /* Espaçamento interno */
-    min-height: 80vh; /* Ocupa boa parte da tela */
+    padding: 4rem 2rem; 
+    min-height: 80vh; 
 }
 
 .container-sobre {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem; /* Espaço entre foto e texto */
+    gap: 4rem; 
     max-width: 1100px;
     width: 100%;
 }
@@ -163,7 +162,6 @@ p { margin-bottom: 15px; color: #b0b0b0; }
     height: 320px;
     border-radius: 50%;
     border: 4px solid #1e1e1e;
-    /* Brilho Verde Neon para combinar com seu tema */
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.3), inset 0 0 0 4px #00ff88;
     overflow: hidden;
 }
@@ -194,11 +192,11 @@ p { margin-bottom: 15px; color: #b0b0b0; }
     background: #1e1e1e;
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaço entre ícone e texto */
+    gap: 8px; 
     padding: 10px 20px;
     border-radius: 50px;
     border: 1px solid #333;
-    color: #00ff88; /* Texto verde */
+    color: #00ff88; 
     font-weight: 500;
     transition: 0.3s;
 }
@@ -238,12 +236,11 @@ p { margin-bottom: 15px; color: #b0b0b0; }
     box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
 }
 
-/* Correção da Imagem do Card (Sua solicitação anterior) */
 .card-imagem {
     width: 100%;
-    height: 200px; /* Altura fixa para todas ficarem iguais */
-    object-fit: cover; /* Corta o excesso */
-    object-position: center top; /* Foca no topo */
+    height: 200px; 
+    object-fit: cover; 
+    object-position: center top; 
     display: block;
     margin: 0;
 }
@@ -351,4 +348,12 @@ footer {
     .hero { padding: 0 20px; text-align: center; justify-content: center; }
     .hero h1 { font-size: 2.5rem; }
     .social-icons { justify-content: center; }
+}
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll; 
+        background-size: cover; 
+        background-position: center center;
+        min-height: 70vh; 
+    }
 }
