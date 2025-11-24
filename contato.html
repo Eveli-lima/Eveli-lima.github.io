@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Éveli</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Portifólio<span class="ponto">.</span></a>
+            <div class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html" class="ativo">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Entre em contato</h2>
+            <p>Tem uma oportunidade ou quer bater um papo? Preencha o formulário abaixo.</p>
+            
+            <form class="form-simples" onsubmit="enviarMensagem(event)">
+                <label>Seu Nome:</label>
+                <input type="text" placeholder="Digite seu nome" required>
+                
+                <label>Seu E-mail:</label>
+                <input type="email" placeholder="email@exemplo.com" required>
+                
+                <label>Mensagem:</label>
+                <textarea rows="5" placeholder="Como posso ajudar?"></textarea>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            
+            <div class="social-container">
+              <p>Ou me encontre no:</p>
+              
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  
+                  <a href="https://github.com/Eveli-lima" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                  </a>
+              </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Éveli. Desenvolvido com HTML e CSS.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
