@@ -349,31 +349,22 @@ footer {
     .hero h1 { font-size: 2.5rem; }
     .social-icons { justify-content: center; }
 }
-/* =========================================
-              MOBILE:
-   ========================================= */
 @media (max-width: 768px) {
     .hero {
         height: 100vh !important;
-        min-height: 600px !important;
-        
-        background-attachment: scroll !important;
+        min-height: 600px !important; 
         background: 
-            linear-gradient(to bottom, rgba(18,18,18, 0.4), rgba(18,18,18, 0.9)),
+            linear-gradient(to bottom, rgba(18,18,18, 0.4), rgba(18,18,18, 0.9)), 
             url('../img/fundo-hero.png') !important;
+            
+        background-size: cover !important; 
+        background-position: center center !important;
+        background-attachment: scroll !important;
         
-        background-size: 140% 140vh !important; 
-        animation: panoramicaMobile 20s infinite alternate ease-in-out;
+        /* Ajustes de espaçamento */
+        padding: 0 20px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
-}
-
-/* Cria o movimento de "câmera lenta" para os lados */
-@keyframes panoramicaMobile {
-    0% {
-        background-position: 20% center; 
-    }
-    100% {
-        background-position: 80% center; 
-    }
-
 }
